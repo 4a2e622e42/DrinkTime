@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activitys.MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bootom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottomNavigationHeight"
+        android:layout_marginTop="@dimen/bottomNavigationMarginTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_icon"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/party_popper"
+        android:layout_width="@dimen/PartyPooperWidth"
+        android:layout_height="@dimen/PartyPooperHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/userGoaltextfield"
+        app:layout_constraintEnd_toEndOf="@+id/water_animation"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/water_animation"
+        app:lottie_rawRes="@raw/party_popper"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/water_animation"
+        android:layout_width="@dimen/waterAnimationWidth"
+        android:layout_height="@dimen/waterAnimationHeight"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:lottie_rawRes="@raw/glass_water_animation" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/progressBarHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:theme="@style/NumberPickerFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userGoaltextfield"
+        app:progressView_colorBackground="@color/gray"
+        app:progressView_colorProgress="@color/skyblue"
+        app:progressView_radius="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/drink_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/drinkButtonHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@dimen/drinkButtonMarginTop"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/byekan_bold"
+        android:text="@string/iDrank"
+        android:textSize="20sp"
+        app:backgroundTint="@color/skyblue"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_fluent_add_circle_32_regular"
+        app:iconGravity="textStart"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daily_goal_text" />
+
+    <ImageView
+        android:id="@+id/water_icon"
+        android:layout_width="@dimen/waterIconWidth"
+        android:layout_height="@dimen/waterIconHeight"
+        android:layout_marginTop="@dimen/waterIconMarginTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drink_button"
+        app:srcCompat="@drawable/ic_glass_of_water"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/glass_size_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/glassSizeTextMarginTop"
+        android:fontFamily="@font/shabnam"
+        android:text="750 ml"
+        android:textColor="#212121"
+        android:textSize="@dimen/glassSizeTextSize"
+        app:layout_constraintStart_toEndOf="@+id/water_icon"
+        app:layout_constraintTop_toBottomOf="@+id/drink_button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/userGoaltextfield"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/userGoaltextfieldMarginEnd"
+        android:fontFamily="@font/shabnam"
+        android:text="7850 ml"
+        android:textColor="#212121"
+        android:textSize="@dimen/userGoaltextfieldSize"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_animation" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/daily_goal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dailyGoalTextMarginEnd"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/byekan"
+        android:text="@string/dailyGoal"
+        android:textColor="#212121"
+        android:textSize="@dimen/dailyGoalTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/drink_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

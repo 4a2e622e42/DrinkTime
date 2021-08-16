@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="95dp"
+        android:background="@color/white"
+
+        />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/byekan"
+        android:text="@string/picke_time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/setting_minute_picker"
+        android:layout_width="71dp"
+        android:layout_height="131dp"
+        android:theme="@style/NumberPickerFont"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        app:mnpEditable="true"
+        app:mnpMaxValue="60"
+        app:mnpMinValue="0"
+        app:mnpValue="0"
+        app:mnpSeparatorColor="@color/black"
+        app:mnpTextColor="@color/gray"
+        app:mnpTextStyle="bold"
+        app:mnpWrapped="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/byekan"
+        android:text="@string/minute"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="65dp"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="230dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/clock_animation" />
+</RelativeLayout>

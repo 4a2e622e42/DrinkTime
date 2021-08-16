@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">WaterRemider</string>
+    <string name="welcome">خوش اومدی</string>
+    <string name="welcomesummery">
+        وزن خودت رو انتخاب کن
+
+    </string>
+    <string name="picke_time">
+
+        هرچندوقت بهت یادآوری کنم؟
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hour">ساعت</string>
+    <string name="minute">دقیقه</string>
+    <string name="setting">تنظیمات</string>
+    <string name="today">امروز</string>
+    <string name="edit">ویرایش</string>
+    <string name="weight">وزن</string>
+    <string name="areYouExercise">ورزشکار</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="email">ایمیل</string>
+    <string name="emailAddress">Ali.Shojasani@tutamail.com</string>
+    <string name="dailyGoal">هدف روزانه</string>
+    <string name="ml">ml</string>
+    <string name="iDrank">نوشیدم</string>
+    <string name="kg">kg</string>
+    <string name="next">بعدی</string>
+    <string name="athletic">ورزشکاری؟</string>
+    <string name="sleepTIme">زمان خواب</string>
+    <string name="chooseMinuteFromSetting">لطفا از قسمت تنظیمات مقدار زمان را تنظیم کنید</string>
+    <string name="goToSetting">رفتن به تنظیمات</string>
+    <string name="save">ذخیره</string>
+    <string name="time"> یادآوری </string>
+    <string name="sleeptimetext">ساعت خواب</string>
+    <string name="setsleeptime">تنظیم ساعت خواب</string>
+    <string name="saveChanges">برای ثبت تغییرات ذخیره را لمس کنید</string>
+    <string name="glassSize">ظرفیت لیوان</string>
+    <string name="faildRegister">اگر موفق به ثبت اطلاعات خود نشده اید
+ در پایین صفحه گزینه تنظیمات را انتخاب کنید"</string>
+
+
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_settings_activityyyyy">SettingsActivityyyyy</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="local_service_started">پاشو یه لیوان آب بزن بر بدن</string>
+
+
+</resources>

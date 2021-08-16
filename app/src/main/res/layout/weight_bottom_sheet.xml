@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/byekan"
+        android:text="@string/welcomesummery"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/weight_bottom_sheet"
+        android:layout_width="85dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="85dp"
+        android:theme="@style/NumberPickerFont"
+        app:mnpEditable="true"
+        app:mnpMaxValue="250"
+        app:mnpMinValue="0"
+        app:mnpSeparatorColor="@color/black"
+        app:mnpTextColor="@color/gray"
+        app:mnpTextStyle="bold"
+        app:mnpValue="0"
+        app:mnpWrapped="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/kg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="163dp"
+        android:layout_marginLeft="150dp"
+        android:text="@string/kg"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="204dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/scale_animation"
+        />
+
+</RelativeLayout>
