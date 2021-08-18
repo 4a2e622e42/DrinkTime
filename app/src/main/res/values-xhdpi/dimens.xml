@@ -22,7 +22,7 @@
 
 
     <dimen name="nextButtonHeight">50dp</dimen>
-    <dimen name="nextButtontextSize">15sp</dimen>
+    <dimen name="nextButtonTextSize">15sp</dimen>
     <dimen name="nextButtonMarginTop">35dp</dimen>
 
 

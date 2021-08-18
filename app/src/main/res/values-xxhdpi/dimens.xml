@@ -25,7 +25,7 @@
 
 
     <dimen name="nextButtonHeight">61dp</dimen>
-    <dimen name="nextButtontextSize">20sp</dimen>
+    <dimen name="nextButtonTextSize">20sp</dimen>
     <dimen name="nextButtonMarginTop">25dp</dimen>
 
 
@@ -33,7 +33,7 @@
 
 
     <dimen name="numberPickerWidth">85dp</dimen>
-    <dimen name="numberPickerHeight">185dp</dimen>
+    <dimen name="numberPickerHeight">100dp</dimen>
     <dimen name="numberPickerFontSize">20sp</dimen>
 
 
