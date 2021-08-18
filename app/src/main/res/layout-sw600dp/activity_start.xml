@@ -55,7 +55,7 @@
         android:backgroundTint="@color/lightgreen"
         android:fontFamily="@font/byekan_bold"
         android:text="@string/next"
-        android:textSize="@dimen/nextButtontextSize"
+        android:textSize="@dimen/nextButtonTextSize"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

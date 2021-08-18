@@ -55,6 +55,7 @@ public class TurnOffNotification extends Service
 
         AlarmManager alarmManager = (AlarmManager) TurnOffNotification.this.getSystemService(Context.ALARM_SERVICE);
         tinyDB.putInt("progressBar",0);
+        tinyDB.putFloat("progressBarPercent",0);
         alarmManager.cancel(pendingIntent);
 
 

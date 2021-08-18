@@ -6,21 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Activitys.StartActivity">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView7"
         android:layout_width="0dp"
         android:layout_height="31dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/byekan_bold"
         android:gravity="center|top"
         android:text="@string/welcome"
@@ -28,7 +19,7 @@
         android:textSize="@dimen/welcomeTextSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView3"
@@ -55,14 +46,14 @@
         android:backgroundTint="@color/lightgreen"
         android:fontFamily="@font/byekan_bold"
         android:text="@string/next"
-        android:textSize="@dimen/nextButtontextSize"
+        android:textSize="@dimen/nextButtonTextSize"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/minute_picker" />
 
-    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+    <NumberPicker
         android:id="@+id/weight_picker"
         android:layout_width="@dimen/numberPickerWidth"
         android:layout_height="@dimen/numberPickerHeight"
@@ -74,14 +65,9 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView3"
-        app:mnpEditable="true"
-        app:mnpMaxValue="250"
-        app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/black"
-        app:mnpTextColor="@color/gray"
-        app:mnpTextStyle="bold"
-        app:mnpValue="0"
-        app:mnpWrapped="false" />
+
+
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/kg_txt"
@@ -125,7 +111,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/athletic_check_box" />
 
-    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+    <NumberPicker
         android:id="@+id/minute_picker"
         android:layout_width="@dimen/numberPickerWidth"
         android:layout_height="@dimen/numberPickerHeight"
@@ -138,14 +124,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView4"
-        app:mnpEditable="true"
-        app:mnpMaxValue="60"
-        app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/black"
-        app:mnpTextColor="@color/gray"
-        app:mnpTextStyle="bold"
-        app:mnpValue="0"
-        app:mnpWrapped="false" />
+
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView5"

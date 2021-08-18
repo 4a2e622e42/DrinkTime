@@ -27,7 +27,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class StartActivity extends AppCompatActivity
 {
-    MaterialNumberPicker weight_picker,minute_picker;
+    NumberPicker weightPicker,minutePicker;
     MaterialButton nextButton;
     MediaPlayer bubbleEffect;
     MaterialCheckBox athleticCheckBox;
@@ -37,7 +37,7 @@ public class StartActivity extends AppCompatActivity
 
 
 
-    //Check if this Activity showd once or not
+    //Check if this Activity showed once or not
     @Override
     protected void onStart()
     {
@@ -77,8 +77,8 @@ public class StartActivity extends AppCompatActivity
 
         TinyDB tinyDB = new TinyDB(getApplicationContext());
 
-        weight_picker     = findViewById(R.id.weight_picker);
-        minute_picker     = findViewById(R.id.minute_picker);
+        weightPicker     = findViewById(R.id.weight_picker);
+        minutePicker     = findViewById(R.id.minute_picker);
         nextButton        = findViewById(R.id.next_button);
         athleticCheckBox  = findViewById(R.id.athletic_check_box);
 
@@ -148,8 +148,9 @@ public class StartActivity extends AppCompatActivity
 
 
 
-
-        weight_picker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
+        weightPicker.setMinValue(0);
+        weightPicker.setMaxValue(250);
+        weightPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
         {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal)
@@ -169,8 +170,9 @@ public class StartActivity extends AppCompatActivity
 
 
 
-
-        minute_picker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
+        minutePicker.setMinValue(0);
+        minutePicker.setMaxValue(60);
+        minutePicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
         {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal)

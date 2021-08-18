@@ -121,7 +121,8 @@ public class MainActivity extends AppCompatActivity
             {
                 float percent = (v / userGoalInML)*100;
                 progressBar.setLabelSize(20);
-                progressBar.setLabelText((int)percent+"%");
+                tinyDB.putFloat("progressBarPercent",percent);
+                progressBar.setLabelText((int)tinyDB.getFloat("progressBarPercent")+"%");
                 if(progressBar.isProgressedMax())
                 {
                     MediaPlayer smallCrowd = MediaPlayer.create(getApplicationContext(),R.raw.small_crowd);
