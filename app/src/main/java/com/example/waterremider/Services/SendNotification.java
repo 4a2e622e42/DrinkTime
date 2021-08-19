@@ -12,6 +12,7 @@ import android.os.IBinder;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
+import com.example.waterremider.Activitys.MainActivity;
 import com.example.waterremider.R;
 import com.example.waterremider.TinyDb.TinyDB;
 
@@ -65,7 +66,7 @@ public class SendNotification extends Service
             public void run()
             {
                 handler.postDelayed(this,minuteInMillisecond);
-                waterEffect[0] = MediaPlayer.create(getApplicationContext(), R.raw.water_pouring_into_glass);
+                waterEffect[0] = MediaPlayer.create(SendNotification.this, R.raw.water_pouring_into_glass);
                 sendNotification();
                 waterEffect[0].start();
 
@@ -111,12 +112,13 @@ public class SendNotification extends Service
             public void run()
             {
                 handler.postDelayed(this,minuteInMillisecond);
-                waterEffect[0] = MediaPlayer.create(getApplicationContext(), R.raw.water_pouring_into_glass);
+                waterEffect[0] = MediaPlayer.create(SendNotification.this, R.raw.water_pouring_into_glass);
                 sendNotification();
                 waterEffect[0].start();
 
             }
         },minuteInMillisecond);
+
         return START_NOT_STICKY;
     }
 
@@ -145,7 +147,7 @@ public class SendNotification extends Service
             public void run()
             {
                 handler.postDelayed(this,minuteInMillisecond);
-                waterEffect[0] = MediaPlayer.create(getApplicationContext(), R.raw.water_pouring_into_glass);
+                waterEffect[0] = MediaPlayer.create(SendNotification.this, R.raw.water_pouring_into_glass);
                 sendNotification();
                 waterEffect[0].start();
 
