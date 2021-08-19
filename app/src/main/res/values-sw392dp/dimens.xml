@@ -28,7 +28,7 @@
 
 
     <dimen name="numberPickerWidth">65dp</dimen>
-    <dimen name="numberPickerHeight">350dp</dimen>
+    <dimen name="numberPickerHeight">40dp</dimen>
     <dimen name="numberPickerFontSize">15sp</dimen>
 
 
