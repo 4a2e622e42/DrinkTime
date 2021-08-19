@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--StartActivityLayout-->
+
+    <dimen name="welcomeTextSize">22sp</dimen>
+    <dimen name="pickYourWeightTextSize">18sp</dimen>
+    <dimen name="pickYourWeightTextMarginTop">8dp</dimen>
+
+
+
+    <dimen name="KgTextSize">18sp</dimen>
+    <dimen name="KgMarginTop">90dp</dimen>
+
+    <dimen name="checkBoxHeight">66dp</dimen>
+    <dimen name="checkBoxTextSize">18sp</dimen>
+
+
+    <dimen name="reminderTextSize">18sp</dimen>
+
+
+
+    <dimen name="minuteTextSize">18sp</dimen>
+    <dimen name="minuteMarginTop">100dp</dimen>
+
+
+    <dimen name="nextButtonHeight">61dp</dimen>
+    <dimen name="nextButtonTextSize">20sp</dimen>
+    <dimen name="nextButtonMarginTop">25dp</dimen>
+
+
+
+
+
+    <dimen name="numberPickerWidth">85dp</dimen>
+    <dimen name="numberPickerHeight">185dp</dimen>
+    <dimen name="numberPickerFontSize">20sp</dimen>
+
+
+
+    <!--MainActivityLayout-->
+    <dimen name="waterAnimationWidth">300dp</dimen>
+    <dimen name="waterAnimationHeight">240dp</dimen>
+
+
+    <dimen name="PartyPooperWidth">300dp</dimen>
+    <dimen name="PartyPooperHeight">240dp</dimen>
+
+
+    <dimen name="userGoaltextfieldSize">18sp</dimen>
+    <dimen name="userGoaltextfieldMarginEnd">32dp</dimen>
+
+
+    <dimen name="progressBarHeight">45dp</dimen>
+
+    <dimen name="dailyGoalTextSize">12sp</dimen>
+    <dimen name="dailyGoalTextMarginEnd">32dp</dimen>
+
+
+
+
+    <dimen name="drinkButtonHeight">75dp</dimen>
+    <dimen name="drinkButtonMarginTop">45dp</dimen>
+
+
+
+    <dimen name="waterIconWidth">55dp</dimen>
+    <dimen name="waterIconHeight">60dp</dimen>
+    <dimen name="waterIconMarginTop">92dp</dimen>
+
+
+
+    <dimen name="bottomNavigationHeight">80dp</dimen>
+    <dimen name="bottomNavigationMarginTop">25dp</dimen>
+
+
+    <dimen name="glassSizeTextSize">18sp</dimen>
+    <dimen name="glassSizeTextMarginTop">120dp</dimen>
+
+
+    <dimen name="birdDrinkWaterWidth">100dp</dimen>
+    <dimen name="birdDrinkWaterHeight">120dp</dimen>
+    <dimen name="birdDrinkWaterMarginTop">85dp</dimen>
+
+
+    <dimen name="emailTextSize">10sp</dimen>
+
+
+
+
+</resources>
