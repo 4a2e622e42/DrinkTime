@@ -33,7 +33,7 @@
 
 
     <dimen name="numberPickerWidth">85dp</dimen>
-    <dimen name="numberPickerHeight">100dp</dimen>
+    <dimen name="numberPickerHeight">185dp</dimen>
     <dimen name="numberPickerFontSize">20sp</dimen>
 
 
