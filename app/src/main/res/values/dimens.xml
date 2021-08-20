@@ -10,7 +10,7 @@
 
 
     <dimen name="KgTextSize">18sp</dimen>
-    <dimen name="KgMarginTop">75dp</dimen>
+    <dimen name="KgMarginTop">85dp</dimen>
 
     <dimen name="checkBoxHeight">66dp</dimen>
     <dimen name="checkBoxTextSize">18sp</dimen>
