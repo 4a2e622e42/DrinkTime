@@ -3,8 +3,8 @@
 
     <!--StartActivityLayout-->
 
-    <dimen name="welcomeTextSize">18sp</dimen>
-    <dimen name="pickYourWeightTextSize">16sp</dimen>
+    <dimen name="welcomeTextSize">22sp</dimen>
+    <dimen name="pickYourWeightTextSize">18sp</dimen>
     <dimen name="pickYourWeightTextMarginTop">8dp</dimen>
 
 
@@ -33,7 +33,7 @@
 
 
     <dimen name="numberPickerWidth">85dp</dimen>
-    <dimen name="numberPickerHeight">100dp</dimen>
+    <dimen name="numberPickerHeight">165dp</dimen>
     <dimen name="numberPickerFontSize">20sp</dimen>
 
 
