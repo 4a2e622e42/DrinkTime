@@ -10,7 +10,7 @@
 
 
     <dimen name="KgTextSize">18sp</dimen>
-    <dimen name="KgMarginTop">55dp</dimen>
+    <dimen name="KgMarginTop">75dp</dimen>
 
     <dimen name="checkBoxHeight">66dp</dimen>
     <dimen name="checkBoxTextSize">18sp</dimen>
@@ -21,7 +21,7 @@
 
 
     <dimen name="minuteTextSize">18sp</dimen>
-    <dimen name="minuteMarginTop">65dp</dimen>
+    <dimen name="minuteMarginTop">85dp</dimen>
 
 
     <dimen name="nextButtonHeight">61dp</dimen>
@@ -33,7 +33,7 @@
 
 
     <dimen name="numberPickerWidth">85dp</dimen>
-    <dimen name="numberPickerHeight">185dp</dimen>
+    <dimen name="numberPickerHeight">165dp</dimen>
     <dimen name="numberPickerFontSize">20sp</dimen>
 
 
