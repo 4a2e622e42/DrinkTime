@@ -10,7 +10,7 @@
 
 
     <dimen name="KgTextSize">18sp</dimen>
-    <dimen name="KgMarginTop">85dp</dimen>
+    <dimen name="KgMarginTop">90dp</dimen>
 
     <dimen name="checkBoxHeight">66dp</dimen>
     <dimen name="checkBoxTextSize">18sp</dimen>
@@ -21,7 +21,7 @@
 
 
     <dimen name="minuteTextSize">18sp</dimen>
-    <dimen name="minuteMarginTop">85dp</dimen>
+    <dimen name="minuteMarginTop">100dp</dimen>
 
 
     <dimen name="nextButtonHeight">61dp</dimen>
@@ -39,20 +39,19 @@
 
 
     <!--MainActivityLayout-->
-    <dimen name="waterAnimationWidth">170dp</dimen>
-    <dimen name="waterAnimationHeight">160dp</dimen>
-
-    <dimen name="PartyPooperWidth">170dp</dimen>
-    <dimen name="PartyPooperHeight">160dp</dimen>
+    <dimen name="waterAnimationWidth">300dp</dimen>
+    <dimen name="waterAnimationHeight">240dp</dimen>
 
 
+    <dimen name="PartyPooperWidth">300dp</dimen>
+    <dimen name="PartyPooperHeight">240dp</dimen>
 
 
-    <dimen name="userGoaltextfieldSize">14sp</dimen>
+    <dimen name="userGoaltextfieldSize">18sp</dimen>
     <dimen name="userGoaltextfieldMarginEnd">32dp</dimen>
 
 
-    <dimen name="progressBarHeight">25dp</dimen>
+    <dimen name="progressBarHeight">45dp</dimen>
 
     <dimen name="dailyGoalTextSize">12sp</dimen>
     <dimen name="dailyGoalTextMarginEnd">32dp</dimen>
@@ -60,23 +59,23 @@
 
 
 
-    <dimen name="drinkButtonHeight">60dp</dimen>
-    <dimen name="drinkButtonMarginTop">16dp</dimen>
+    <dimen name="drinkButtonHeight">75dp</dimen>
+    <dimen name="drinkButtonMarginTop">45dp</dimen>
 
 
 
-    <dimen name="waterIconWidth">35dp</dimen>
-    <dimen name="waterIconHeight">40</dimen>
-    <dimen name="waterIconMarginTop">32dp</dimen>
+    <dimen name="waterIconWidth">55dp</dimen>
+    <dimen name="waterIconHeight">60dp</dimen>
+    <dimen name="waterIconMarginTop">92dp</dimen>
 
 
 
-    <dimen name="bottomNavigationHeight">55dp</dimen>
-    <dimen name="bottomNavigationMarginTop">40dp</dimen>
+    <dimen name="bottomNavigationHeight">80dp</dimen>
+    <dimen name="bottomNavigationMarginTop">25dp</dimen>
 
 
-    <dimen name="glassSizeTextSize">15sp</dimen>
-    <dimen name="glassSizeTextMarginTop">48dp</dimen>
+    <dimen name="glassSizeTextSize">18sp</dimen>
+    <dimen name="glassSizeTextMarginTop">120dp</dimen>
 
 
     <dimen name="birdDrinkWaterWidth">100dp</dimen>
