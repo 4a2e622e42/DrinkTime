@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:resizeableActivity="true"
+    tools:context=".Activitys.StartActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView7"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/byekan_bold"
+        android:gravity="center|top"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/welcomeTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/pickYourWeightTextMarginTop"
+        android:fontFamily="@font/byekan"
+        android:gravity="center|top"
+        android:text="@string/welcomesummery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pickYourWeightTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/nextButtonHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@dimen/nextButtonMarginTop"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/lightgreen"
+        android:fontFamily="@font/byekan_bold"
+        android:text="@string/next"
+        android:textSize="@dimen/nextButtonTextSize"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minute_picker" />
+
+    <NumberPicker
+        android:id="@+id/weight_picker"
+        android:layout_width="@dimen/numberPickerWidth"
+        android:layout_height="@dimen/numberPickerHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:theme="@style/NumberPickerFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/kg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/KgMarginTop"
+        android:text="@string/kg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/KgTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/weight_picker"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/athletic_check_box"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/checkBoxHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/athletic"
+        android:textSize="@dimen/checkBoxTextSize"
+        android:theme="@style/NumberPickerFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_picker" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/byekan"
+        android:gravity="center"
+        android:text="@string/picke_time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/reminderTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/athletic_check_box" />
+
+    <NumberPicker
+        android:id="@+id/minute_picker"
+        android:layout_width="@dimen/numberPickerWidth"
+        android:layout_height="@dimen/numberPickerHeight"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:soundEffectsEnabled="true"
+        android:theme="@style/NumberPickerFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView4"
+
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/minuteMarginTop"
+        android:fontFamily="@font/byekan"
+        android:text="@string/minute"
+        android:textColor="@color/black"
+        android:textSize="@dimen/minuteTextSize"
+        app:layout_constraintStart_toEndOf="@+id/minute_picker"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
