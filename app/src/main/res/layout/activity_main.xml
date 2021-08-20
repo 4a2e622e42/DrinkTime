@@ -16,13 +16,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bootom_navigation"
         android:layout_width="0dp"
         android:layout_height="@dimen/bottomNavigationHeight"
         android:layout_marginTop="@dimen/bottomNavigationMarginTop"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
