@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:id="@+id/bootom_navigation"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,7 +102,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drink_button"
         app:srcCompat="@drawable/ic_glass_of_water"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/glass_size_text_view"
@@ -112,7 +114,6 @@
         android:fontFamily="@font/shabnam"
         android:textColor="#212121"
         android:textSize="@dimen/glassSizeTextSize"
-        android:text="750 ml"
         app:layout_constraintStart_toEndOf="@+id/water_icon"
         app:layout_constraintTop_toBottomOf="@+id/drink_button" />
 
