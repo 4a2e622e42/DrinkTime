@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:resizeableActivity="true"
     tools:context=".Activitys.StartActivity">
 
 
@@ -66,8 +65,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-
-
         app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
 
     <com.google.android.material.textview.MaterialTextView
@@ -75,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/KgMarginTop"
+        android:layout_marginTop="55dp"
         android:text="@string/kg"
         android:textColor="@color/black"
         android:textSize="@dimen/KgTextSize"
@@ -133,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/minuteMarginTop"
+        android:layout_marginTop="65dp"
         android:fontFamily="@font/byekan"
         android:text="@string/minute"
         android:textColor="@color/black"

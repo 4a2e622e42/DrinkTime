@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:resizeableActivity="true"
     tools:context=".Activitys.StartActivity">
 
 
@@ -75,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/KgMarginTop"
+        android:layout_marginTop="80dp"
         android:text="@string/kg"
         android:textColor="@color/black"
         android:textSize="@dimen/KgTextSize"
@@ -133,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/minuteMarginTop"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/byekan"
         android:text="@string/minute"
         android:textColor="@color/black"
