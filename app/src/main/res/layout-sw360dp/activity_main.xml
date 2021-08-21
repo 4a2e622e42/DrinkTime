@@ -59,7 +59,7 @@
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progress_bar"
         android:layout_width="0dp"
-        android:layout_height="@dimen/progressBarHeight"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:theme="@style/NumberPickerFont"
@@ -96,7 +96,7 @@
         android:id="@+id/water_icon"
         android:layout_width="45dp"
         android:layout_height="50dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="75dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,10 +109,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/shabnam"
         android:textColor="#212121"
         android:textSize="@dimen/glassSizeTextSize"
+        android:text="750 ml"
         app:layout_constraintStart_toEndOf="@+id/water_icon"
         app:layout_constraintTop_toBottomOf="@+id/drink_button" />
 
