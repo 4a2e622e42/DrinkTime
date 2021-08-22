@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,8 +20,8 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bootom_navigation"
         android:layout_width="0dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +30,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/party_popper"
-        android:layout_width="@dimen/PartyPooperWidth"
-        android:layout_height="@dimen/PartyPooperHeight"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
@@ -44,14 +45,13 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/water_animation"
-        android:layout_width="@dimen/waterAnimationWidth"
-        android:layout_height="@dimen/waterAnimationHeight"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:lottie_rawRes="@raw/glass_water_animation" />
@@ -59,7 +59,7 @@
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progress_bar"
         android:layout_width="0dp"
-        android:layout_height="@dimen/progressBarHeight"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:theme="@style/NumberPickerFont"
@@ -75,9 +75,9 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/drink_button"
         android:layout_width="0dp"
-        android:layout_height="@dimen/drinkButtonHeight"
+        android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="@dimen/drinkButtonMarginTop"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/byekan_bold"
         android:text="@string/iDrank"
@@ -94,24 +94,24 @@
 
     <ImageView
         android:id="@+id/water_icon"
-        android:layout_width="@dimen/waterIconWidth"
-        android:layout_height="@dimen/waterIconHeight"
-        android:layout_marginTop="@dimen/waterIconMarginTop"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drink_button"
         app:srcCompat="@drawable/ic_glass_of_water"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/glass_size_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/glassSizeTextMarginTop"
+        android:layout_marginTop="75dp"
         android:fontFamily="@font/shabnam"
-        android:text="750 ml"
         android:textColor="#212121"
         android:textSize="@dimen/glassSizeTextSize"
         app:layout_constraintStart_toEndOf="@+id/water_icon"
@@ -123,7 +123,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/userGoaltextfieldMarginEnd"
         android:fontFamily="@font/shabnam"
-        android:text="7850 ml"
         android:textColor="#212121"
         android:textSize="@dimen/userGoaltextfieldSize"
         app:layout_constraintBottom_toTopOf="@+id/progress_bar"
