@@ -27,7 +27,6 @@
         android:id="@+id/materialTextView3"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/byekan"
         android:gravity="center|top"
         android:text="@string/welcomesummery"
@@ -89,19 +88,20 @@
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/athletic_check_box"
         android:layout_width="0dp"
-        android:layout_height="@dimen/checkBoxHeight"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:text="@string/athletic"
         android:textSize="@dimen/checkBoxTextSize"
         android:theme="@style/NumberPickerFont"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weight_picker" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView4"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -124,8 +124,8 @@
         android:soundEffectsEnabled="true"
         android:theme="@style/NumberPickerFont"
         app:layout_constraintBottom_toTopOf="@+id/next_button"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
