@@ -36,7 +36,6 @@
         android:layout_height="@dimen/PartyPooperHeight"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="24dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/userGoaltextfield"
         app:layout_constraintEnd_toEndOf="@+id/water_animation"
