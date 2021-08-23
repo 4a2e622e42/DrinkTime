@@ -38,7 +38,8 @@ public class RemindTimeBottomSheet extends BottomSheetDialogFragment
         minutePicker = view.findViewById(R.id.setting_minute_picker);
 
 
-
+        minutePicker.setMinValue(5);
+        minutePicker.setMaxValue(60);
         minutePicker.setValue(tinyDB.getInt("minute"));
         minutePicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
         {

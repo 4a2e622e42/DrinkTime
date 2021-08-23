@@ -33,6 +33,9 @@ public class WeightBottomSheet extends BottomSheetDialogFragment
 
         weight = view.findViewById(R.id.weight_bottom_sheet);
 
+
+        weight.setMinValue(20);
+        weight.setMaxValue(250);
         weight.setValue((int)tinyDB.getDouble("weight"));
         weight.setOnValueChangedListener(new NumberPicker.OnValueChangeListener()
         {
