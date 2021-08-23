@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import com.example.waterremider.BottomSheets.SleepTimeBottomSheet;
 import com.example.waterremider.BottomSheets.RemindTimeBottomSheet;
@@ -23,12 +25,13 @@ import com.github.angads25.toggle.model.ToggleableView;
 import com.github.angads25.toggle.widget.LabeledSwitch;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.google.android.material.textview.MaterialTextView;
 
 public class SettingsActivity extends AppCompatActivity
 {
 
-    LabeledSwitch exerciseSwitch;
+    SwitchMaterial exerciseSwitch;
     MaterialCardView weightCardView,timeCardView,glassSizeCardView,emailCardView;
     MaterialTextView versionNumber,weightTextValue,timeTextValue,glassSizeTextView,sleepTimeTextValue,wakeUpTimeTextValue;
     ImageView birdDrinkWater;
@@ -101,12 +104,13 @@ public class SettingsActivity extends AppCompatActivity
 
 
 
-        exerciseSwitch.setOn(tinyDB.getBoolean("areYouExercise"));
-        exerciseSwitch.setOnToggledListener(new OnToggledListener() {
+        exerciseSwitch.setChecked(tinyDB.getBoolean("areYouExercise"));
+        exerciseSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
             @Override
-            public void onSwitched(ToggleableView toggleableView, boolean isOn)
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
             {
-                if(isOn)
+                if(isChecked)
                 {
                     tinyDB.putBoolean("areYouExercise",true);
                     exerciseTimeDialog();
@@ -117,7 +121,6 @@ public class SettingsActivity extends AppCompatActivity
                 }
             }
         });
-
 
 
 
