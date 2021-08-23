@@ -36,33 +36,14 @@
 
         />
 
-    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+    <NumberPicker
         android:id="@+id/setting_minute_picker"
-        android:layout_width="71dp"
-        android:layout_height="131dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:theme="@style/NumberPickerFont"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"
-        app:mnpEditable="true"
-        app:mnpMaxValue="60"
-        app:mnpMinValue="0"
-        app:mnpValue="0"
-        app:mnpSeparatorColor="@color/black"
-        app:mnpTextColor="@color/gray"
-        app:mnpTextStyle="bold"
-        app:mnpWrapped="false" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/byekan"
-        android:text="@string/minute"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="65dp"
-
-        />
+      />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="230dp"

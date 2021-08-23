@@ -61,10 +61,6 @@ dependencies {
     implementation 'com.github.angads25:toggle:1.1.0'
 
 
-    //WorkRunTime
-    implementation "androidx.work:work-runtime:2.5.0"
-
-
     //TimePicker
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
 

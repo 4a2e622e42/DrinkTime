@@ -38,21 +38,14 @@
 
         />
 
-    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+    <NumberPicker
         android:id="@+id/weight_bottom_sheet"
-        android:layout_width="85dp"
-        android:layout_height="179dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
         android:layout_marginTop="85dp"
         android:theme="@style/NumberPickerFont"
-        app:mnpEditable="true"
-        app:mnpMaxValue="250"
-        app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/black"
-        app:mnpTextColor="@color/gray"
-        app:mnpTextStyle="bold"
-        app:mnpValue="0"
-        app:mnpWrapped="false" />
+      />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/kg_txt"
