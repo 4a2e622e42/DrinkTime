@@ -12,14 +12,13 @@ import androidx.annotation.Nullable;
 
 import com.example.waterremider.TinyDb.TinyDB;
 import com.example.waterremider.R;
-import com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import org.jetbrains.annotations.NotNull;
 
 public class WeightBottomSheet extends BottomSheetDialogFragment
 {
-    MaterialNumberPicker weight;
+    NumberPicker weight;
     MediaPlayer bubbleEffect;
 
 

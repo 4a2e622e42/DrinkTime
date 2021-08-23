@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 
 import com.example.waterremider.TinyDb.TinyDB;
 import com.example.waterremider.R;
-import com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
 public class RemindTimeBottomSheet extends BottomSheetDialogFragment
 {
 
-    MaterialNumberPicker minutePicker;
+    NumberPicker minutePicker;
     MediaPlayer bubbleEffect;
 
 
