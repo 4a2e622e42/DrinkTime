@@ -54,13 +54,9 @@ dependencies {
     //Material design
     implementation 'com.google.android.material:material:1.4.0'
 
-    //NumberPicker
-    implementation "com.github.StephenVinouze:MaterialNumberPicker:1.0.5"
-
     //Switch Button
     implementation 'com.github.angads25:toggle:1.1.0'
-
-
+    
     //TimePicker
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
 
