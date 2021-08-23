@@ -9,6 +9,7 @@
         android:largeScreens="true"
         android:xlargeScreens="true"
         android:anyDensity="true" />
+    <uses-sdk android:minSdkVersion="17"/>
 
 
     <application

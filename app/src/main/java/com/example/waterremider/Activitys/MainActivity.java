@@ -67,11 +67,13 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
       if(tinyDB.getBoolean("OneTimeDialog"))
         {
             defaultValueDialog();
             tinyDB.putBoolean("OneTimeDialog",false);
         }
+
 
 
         init();
