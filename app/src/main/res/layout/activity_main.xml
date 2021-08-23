@@ -21,7 +21,6 @@
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,13 +47,12 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/water_animation"
-        android:layout_width="@dimen/waterAnimationWidth"
-        android:layout_height="@dimen/waterAnimationHeight"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         app:layout_constraintBottom_toTopOf="@+id/userGoaltextfield"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
@@ -79,9 +77,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/drink_button"
         android:layout_width="0dp"
-        android:layout_height="@dimen/drinkButtonHeight"
+        android:layout_height="70dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="35dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/byekan_bold"
         android:text="@string/iDrank"
@@ -115,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="253dp"
         android:fontFamily="@font/shabnam"
         android:text="750 ml"
@@ -128,9 +125,8 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/userGoaltextfield"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="314dp"
         android:layout_marginEnd="@dimen/userGoaltextfieldMarginEnd"
         android:fontFamily="@font/shabnam"
         android:text="7850 ml"
@@ -138,14 +134,12 @@
         android:textSize="@dimen/userGoaltextfieldSize"
         app:layout_constraintBottom_toTopOf="@+id/progress_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/water_animation" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/daily_goal_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="327dp"
         android:layout_marginEnd="@dimen/dailyGoalTextMarginEnd"
         android:fontFamily="@font/byekan"
         android:text="@string/dailyGoal"
@@ -153,7 +147,6 @@
         android:textSize="@dimen/dailyGoalTextSize"
         app:layout_constraintBottom_toTopOf="@+id/drink_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
 
 

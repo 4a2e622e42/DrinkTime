@@ -140,12 +140,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
-
-
-
-
-
         drinkButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -156,10 +150,8 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
                 waterAnimation.playAnimation();
                 drinkButton.setClickable(false);
-
                 MediaPlayer waterPouring = MediaPlayer.create(getApplicationContext(),R.raw.water_pouring_into_glass);
                 waterPouring.start();
 
