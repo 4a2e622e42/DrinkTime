@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.WaterTime.Services.TurnOffNotification;
