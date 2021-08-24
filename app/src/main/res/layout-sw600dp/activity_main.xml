@@ -20,6 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/bottomNavigationHeight"
         android:layout_marginTop="@dimen/bottomNavigationMarginTop"
+        android:background="@drawable/nav_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -53,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:lottie_rawRes="@raw/glass_water_animation" />
+        app:lottie_rawRes="@raw/glass" />
 
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progress_bar"
