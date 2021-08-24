@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.waterremider">
+    package="com.example.WaterTime">
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <supports-screens
         android:smallScreens="true"
@@ -21,13 +21,13 @@
         android:theme="@style/Theme.WaterRemider"
         >
         <activity
-            android:name=".Activitys.SettingsActivity"
+            android:name="com.example.WaterTime.Activitys.SettingsActivity"
             android:screenOrientation="portrait"
 
             >
         </activity>
 
-        <activity android:name=".Activitys.StartActivity"
+        <activity android:name="com.example.WaterTime.Activitys.StartActivity"
             android:screenOrientation="portrait"
 
             >
@@ -37,13 +37,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activitys.MainActivity"
+        <activity android:name="com.example.WaterTime.Activitys.MainActivity"
             android:screenOrientation="portrait"
 
             />
 
-        <service  android:enabled="true"  android:name=".Services.SendNotification"/>
-        <service  android:enabled="true"  android:name=".Services.TurnOffNotification"/>
+        <service  android:enabled="true"  android:name="com.example.WaterTime.Services.SendNotification"/>
+        <service  android:enabled="true"  android:name="com.example.WaterTime.Services.TurnOffNotification"/>
 
     </application>
 

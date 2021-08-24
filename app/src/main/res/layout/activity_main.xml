@@ -34,7 +34,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/party_popper"
         android:layout_width="@dimen/PartyPooperWidth"
-        android:layout_height="@dimen/PartyPooperHeight"
+        android:layout_height="200dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:visibility="invisible"
@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="@+id/water_animation"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_rawRes="@raw/party_popper"
-        tools:ignore="MissingConstraints" />
+        />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/water_animation"
