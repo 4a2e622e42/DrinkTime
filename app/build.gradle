@@ -44,15 +44,15 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Lottie Animation
-    def lottieVersion = "4.1.0"
+    def lottieVersion = "3.7.2"
     //noinspection GradleDependency
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
     //ProgressBar
     implementation "com.github.skydoves:progressview:1.1.1"
 
-    //Material design
-    implementation 'com.google.android.material:material:1.4.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
 
     //TimePicker
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
