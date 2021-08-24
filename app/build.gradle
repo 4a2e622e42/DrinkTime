@@ -8,8 +8,8 @@ android {
 
     defaultConfig
     {
-        applicationId "com.example.AliShojasaniWaterTime"
-        minSdkVersion 17
+        applicationId "com.wt.DrinkTime"
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
