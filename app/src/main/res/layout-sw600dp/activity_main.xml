@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:lottie_rawRes="@raw/glass" />
+        app:lottie_rawRes="@raw/water_pouring_into_glass" />
 
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progress_bar"
