@@ -59,10 +59,10 @@
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:lottie_rawRes="@raw/glass_water_animation" />
 
-    <ProgressBar
+    <com.skydoves.progressview.ProgressView
         android:id="@+id/progress_bar"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="@dimen/progressBarHeight"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:theme="@style/NumberPickerFont"
@@ -70,8 +70,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userGoaltextfield"
-
-        />
+        app:progressView_colorBackground="@color/gray"
+        app:progressView_colorProgress="@color/skyblue"
+        app:progressView_radius="20dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/drink_button"
