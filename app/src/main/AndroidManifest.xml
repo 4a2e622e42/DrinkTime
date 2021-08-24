@@ -13,9 +13,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/waterremindericon"
         android:label="وقت نوشیدن"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/waterremindericon"
         android:supportsRtl="false"
         android:screenOrientation="portrait"
         android:theme="@style/Theme.WaterRemider"
@@ -42,7 +42,6 @@
 
             />
 
-        <service  android:enabled="true"  android:name=".BroadCasts.ReminderBroadcast"/>
         <service  android:enabled="true"  android:name=".Services.SendNotification"/>
         <service  android:enabled="true"  android:name=".Services.TurnOffNotification"/>
 
