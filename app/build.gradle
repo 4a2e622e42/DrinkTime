@@ -8,7 +8,7 @@ android {
 
     defaultConfig
     {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.AliShojasaniWaterTime"
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
