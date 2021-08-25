@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
     protected int currentGlassSize;
     protected final double constantNumber = 0.033;
     protected LottieAnimationView waterAnimation,partyPopper;
-    //protected ProgressView progressBar;
+    protected ProgressView progressBar;
     protected MaterialButton drinkButton;
     protected MaterialTextView userGoalTextField;
     protected MaterialTextView glassSizeTextView;
@@ -113,9 +113,8 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        //progressBar Setting
-      /*  progressBar.setMax(userGoalInML);
-        //progressBar.setAnimating(true);
+        progressBar.setMax(userGoalInML);
+        progressBar.setAnimating(true);
         progressBar.setProgressFromPrevious(true);
         progressBar.setOnProgressChangeListener(new OnProgressChangeListener()
         {
@@ -135,7 +134,7 @@ public class MainActivity extends AppCompatActivity
                 }
 
             }
-        });*/
+        });
 
 
 
@@ -148,8 +147,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                ///progressBar.setProgress(currentGlassSize + tinyDB.getInt("progressBar"));
-                //tinyDB.putInt("progressBar", (int) (progressBar.getProgress()));
+                progressBar.setProgress(currentGlassSize + tinyDB.getInt("progressBar"));
+                tinyDB.putInt("progressBar", (int) (progressBar.getProgress()));
 
 
 
@@ -202,7 +201,7 @@ public class MainActivity extends AppCompatActivity
     private void init()
     {
         waterAnimation       =  findViewById(R.id.water_animation);
-        //progressBar          =  findViewById(R.id.progress_bar);
+        progressBar          =  findViewById(R.id.progress_bar);
         drinkButton          =  findViewById(R.id.drink_button);
         userGoalTextField    =  findViewById(R.id.userGoaltextfield);
         bottomNavigationView =  findViewById(R.id.bootom_navigation);
@@ -287,7 +286,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onResume();
         TinyDB tinyDB = new TinyDB(getApplicationContext());
-        //progressBar.setProgress(tinyDB.getInt("progressBar"));
+        progressBar.setProgress(tinyDB.getInt("progressBar"));
         sendNotification();
 
 
